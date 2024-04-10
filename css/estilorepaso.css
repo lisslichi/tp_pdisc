@@ -1,0 +1,167 @@
+* {
+    /* El asterisco hace que se aplique a todo */
+    padding: 0;
+    margin: 0;
+    /* Elimina el borde blanco */
+    box-sizing: border-box;
+    /* Elimina la barra de desplazamiento */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    /* Declarar variables */
+    --anchomain: 80%;
+    --ancho100: 100%;
+    --colorprimario: ##FF5733;
+}
+/* ---ORDENAMIENTO----- */
+.dflex{
+    display: flex;
+}
+.columna{
+    flex-direction: column;
+}
+.separar{
+    justify-content: space-between;
+}
+.centrar{
+    justify-content: center;
+    align-items: center;
+}
+.h50{
+    height: 50%;
+}
+
+
+/* ---FIN ORDENAMIENTO----- */
+
+/* H = Altura
+   W = Anchura
+   Ctrl + K + C para comentar
+Clases se declaran con punto, pero una id se declara con # */
+
+#contenedor {
+    min-height: 100vh;
+    /* vh: viewport height */
+    width: 100%;
+    background-color: #F9C04E;
+    padding: 5px;
+    /* El padding separa el borde desde el contenedor */
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #FFC300;
+    display: flex; /* Metodo de ordenamiento: Los elementos que va a estar conteniendo los ordena uno al lado del otro */
+    justify-content: space-between; /* Envia el contenido al principio y final */
+    align-items: center; /* Alinea el contenido verticalmente */
+    /* flex-direction: column; */
+
+    & .logo {
+        height: 30px;
+        width: 100px;
+        background-color: gold;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        & span:first-child{ /* first-child solo se aplica al primero del tipo despues de cada diferente*/
+            font-size: 20pt;
+            color: white;
+        }
+        & span:nth-child(2){
+            color: gold;
+        }
+    }
+
+    & .botonera {
+        height: 30px;
+        & a{
+            text-decoration: none; /* Elimina el subrayado del enlace */
+            font-size: 25px;
+            padding: 10px 20px 0px 20px; /* Separacion entre cada boton */
+            background-color: white;
+            border-radius: 20px; /* Borde del cuadrado*/
+        }
+        & a:hover{
+            box-shadow: 0px 0px 25px -5px #C70039;
+            /* background-color:#C70039; */
+        }
+    }
+}
+
+header .logo {
+    height: 30px;
+    width: 100px;
+    background-color: #581845;
+}
+
+main {
+    width: var(--anchomain);
+    margin: auto;
+    /* Centraliza el contenedor */
+}
+
+#banner {
+    height: 200px;
+    /* var() para seleccionar las variables */
+    background-color: #C70039;
+}
+
+#articulos {
+    height: 400px;
+    width: 100%;
+    background-color: #900C3F;
+    display: flex;
+
+}
+.producto{
+    width: 25%;
+    height:100%;
+    background-color: antiquewhite;
+    padding: 10px;
+
+    & .img_prod{
+        height: 50%;
+        width: 100%;
+        background-color: red;
+
+    }
+
+    
+}
+
+#descripcion {
+    height: 150px;
+    background-color: #581845;
+}
+
+#nosotros {
+    height: 150px;
+    background-color:beige;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: gold;
+}
+.btn {
+    border: solid 1px white;
+    background-color: transparent;
+    box-shadow: 0 0 15px 0 black;
+    /*box-shadow:x y blur*/
+    width: 100%;
+    padding: 5px 5px;
+}
+
+.btn:hover {
+    background-color: white;
+    box-shadow: 0 5px 15px 0 black;
+}
+
+.btn:active {
+    background-color: rgb(120, 190, 108);
+    box-shadow: 0 5px 15px 0 black;
+}
