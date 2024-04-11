@@ -119,7 +119,7 @@ main {
 .producto{
     width: 25%;
     height:100%;
-    background-color: antiquewhite;
+    
     padding: 10px;
 
     & .img_prod{
@@ -130,6 +130,9 @@ main {
     }
 
     
+}
+.producto:nth-child(3){
+    background-color: #F9C04E;
 }
 
 #descripcion {
