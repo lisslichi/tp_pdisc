@@ -156,7 +156,14 @@ background-color: aquamarine;
     align-items:flex-end;
 
 }
+.staff{
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    background-color: aqua;
 
+}
 footer {
     height: 50px;
     width: 100%;
@@ -179,10 +186,4 @@ footer {
 .btn:active {
     background-color: rgb(120, 190, 108);
     box-shadow: 0 5px 15px 0 black;
-}
-.staff{
-    height: 100%;
-    width: 100px;
-    background-color: aqua;
-
 }
