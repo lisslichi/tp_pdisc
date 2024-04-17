@@ -149,6 +149,9 @@ background-color: aquamarine;
 #nosotros {
     height: 150px;
     background-color:beige;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 footer {
