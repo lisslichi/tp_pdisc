@@ -140,7 +140,10 @@ background-color: aquamarine;
 
 #descripcion {
     height: 150px;
+    width: 100%;
+    display: flex;
     background-color: #581845;
+    justify-content: space-around;
 }
 
 #nosotros {
