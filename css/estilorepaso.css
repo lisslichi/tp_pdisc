@@ -158,9 +158,9 @@ background-color: aquamarine;
 }
 .staff{
     height: 100%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 300px;
+    flex-grow: 1;/* es la capacidad del elemento hijo de agrandarse si es necesario*/
+    flex-shrink: 1;/* es la capacidad del elemento hijo de achicarse si es necesario*/
+    flex-basis: 300px;/* estable un ancho minimo al elemento hijo*/
     background-color: aqua;
 
 }
