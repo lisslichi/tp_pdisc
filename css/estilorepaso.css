@@ -163,6 +163,13 @@ background-color: aquamarine;
     flex-basis: 300px;/* estable un ancho minimo al elemento hijo*/
     background-color: aqua;
 
+    .foto-redonda{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
 }
 footer {
     height: 50px;
