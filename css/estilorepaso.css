@@ -180,12 +180,13 @@ background-color: aquamarine;
             height: 100%;
             object-fit: cover;
         }
-        p{
+       
+
+    } 
+    p{
             text-align: center;
             text-wrap: balance;
         }
-
-    }
 
 }
 footer {
