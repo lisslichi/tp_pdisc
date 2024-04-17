@@ -150,6 +150,7 @@ background-color: aquamarine;
     height: 300px;
     background-color:burlywood;
     width: 100%;
+    background: linear-gradient(180deg,white 0%,yellow 50%);
     display: flex;
     gap:5px;
     justify-content: space-evenly;
@@ -157,12 +158,12 @@ background-color: aquamarine;
 
 }
 .staff{
-    height: 100%;
+    height: 90%;
     flex-grow: 1;/* es la capacidad del elemento hijo de agrandarse si es necesario*/
     flex-shrink: 1;/* es la capacidad del elemento hijo de achicarse si es necesario*/
     flex-basis: 300px;/* estable un ancho minimo al elemento hijo*/
     flex: 1 0 200px;
-    background-color: aqua;
+  
 
     display: flex;
     flex-direction: column;
