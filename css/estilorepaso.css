@@ -180,3 +180,9 @@ footer {
     background-color: rgb(120, 190, 108);
     box-shadow: 0 5px 15px 0 black;
 }
+.staff{
+    height: 100%;
+    width: 100px;
+    background-color: aqua;
+
+}
