@@ -151,7 +151,9 @@ background-color: aquamarine;
     background-color:burlywood;
     width: 100%;
     display: flex;
+    gap:5px
     justify-content: space-around;
+    
 }
 
 footer {
