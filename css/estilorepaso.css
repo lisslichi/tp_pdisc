@@ -161,7 +161,14 @@ background-color: aquamarine;
     flex-grow: 1;/* es la capacidad del elemento hijo de agrandarse si es necesario*/
     flex-shrink: 1;/* es la capacidad del elemento hijo de achicarse si es necesario*/
     flex-basis: 300px;/* estable un ancho minimo al elemento hijo*/
+    flex: 1 0 200px;
     background-color: aqua;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
 
     .foto-redonda{
         height: 100px;
@@ -173,6 +180,11 @@ background-color: aquamarine;
             height: 100%;
             object-fit: cover;
         }
+        p{
+            text-align: center;
+            text-wrap: balance;
+        }
+
     }
 
 }
