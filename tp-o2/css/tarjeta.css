@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display: grid;
+    place-items: center;
+
+}
+/*-----------colores-------------*/
+.rojo{background-color: red;}
+.blanco{background-color: white;}
+.negro{background-color: black;}
+.naranja{background-color: orange;}
+.verde{background-color: green;}
+/*----------colores--------------*/
+
+.producto {
+    width: 300px;
+    height: 80%;
+    background-color: white;
+    box-shadow: 0px 0px 25px -3px black;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    /* la zona blanca de decoracion es sino me gusta lo sacamos al pingo*/
+
+    .header_prod {
+        border-radius: 15px 15px 0px 0px;
+        /* si saco el padding saco esto tambien*/
+        height: 60px;
+        width: 100%;
+        background-color: #85C1E9;
+    }
+
+    .main_prod {
+        border-radius: 0 0 15px 15px;
+        height: calc(100% - 60px);
+        width: 100%;
+        background-color: #80D0C7;
+        
+
+        .imagen_prod{
+            height: 60%;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .desc_prod{
+            height: 40%;
+            width: 100%;
+            background-color:red;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            input[type=submit]{
+                width: 100%;
+                padding: 5px 10px;
+                border-radius: 14px;
+                cursor: pointer;
+                border: none;
+                
+
+
+            }
+            input[type=submit]:hover{
+                background-color: gray;
+                color: white;
+            }
+
+        }
+
+
+    }
+
+
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    li{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    
+
+    }
+
+}
+
+ul.talles li{
+    height: 30px;
+    width: 44px;
+    border: solid 2px black;
+    display: grid;
+    place-items: center;
+    
+}
+
